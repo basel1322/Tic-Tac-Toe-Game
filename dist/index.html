@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div id=scorediv>
+  <table id =scoretable>
+    <tr>
+     <th>Player</th>
+     <th>Score</th>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>0</td>
+    </tr>
+  </table>
+</div>
+  <header>
+    <h>Tic Tac Toe.</h>
+  </header>
+  <form id="GameForm">
+  <div id="divfortable">
+    <div id="winnerLabel"> </div>
+    <table id="main-game" style="width:100%"> 
+      </table>
+    </div>
+  </form>
+  <form id ="GameButtons" >
+    <button id="loadgame" type="button">PlayAgain</button>
+  </form>
+  <div class="modal">
+    <p class="message">Game Options</p>
+      <div class=selectboxdiv>
+      <p>Play Against:</p>
+      <select id="selectbox">
+        <option value="0">Player</option>
+        <option value="1">Computer</option>
+      </select>
+    </div>
+    <br>
+    <div class="options">
+      <br><br>
+      <button class="btn">Close</button>
+      <button id="restartgame"class="btn">Start New Game</button>
+    </div>
+  </div>
+  <form id ="GameButtons" >
+    <button id="GameOptions" type="button">GameOptions</button>
+  </form>
+</body>
+<script src="./bundle.js"></script>
+</html>
