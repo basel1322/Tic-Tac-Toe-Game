@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+#body{
   background-color: pink;
 }
 header{
@@ -35,7 +35,7 @@ header,#GameForm{
   border-bottom: 2px solid black;
 }
 
-.modal {
+#modal {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -55,7 +55,7 @@ header,#GameForm{
   margin-bottom: 1.6rem;
   margin-top: 0;
 }
-.btn,#loadgame,#GameOptions {
+#closewindow,#restartgame,#loadgame,#GameOptions {
   color:inherit;
     font-family:inherit;
   font-size: inherit;
@@ -69,17 +69,21 @@ header,#GameForm{
 #loadgame{
   display: none;
 }
+#closewindow{
+  display: none;
+}
 
-.btn:last-child,#loadgame:last-child,#GameOptions:last-child  {
+
+#closewindow:last-child,#restartgame:last-child,#loadgame:last-child,#GameOptions:last-child  {
   margin: 0;
 }
 
-.btn:hover,#loadgame:hover,#GameOptions:hover {
+#closewindow:hover,#restartgame:hover,#loadgame:hover,#GameOptions:hover {
   box-shadow: 0.4rem 0.4rem 0 black;
   transform: translate(-0.4rem, -0.4rem);
 }
 
-.btn:active,#loadgame:active,#GameOptions:active {
+#closewindow:active,#restartgame:active,#loadgame:active,#GameOptions:active {
   box-shadow: 0 0 0 black;
   transform: translate(0, 0);
 }
@@ -106,7 +110,20 @@ header,#GameForm{
 #scorediv{
   display: flex;
   justify-content: space-between;
+  display:none;
 }
 #scoretable table,#scoretable th,#scoretable td {
   border: 1px solid black;
 }
+
+@media (min-width: 576px) { 
+  .container{}
+ }
+
+
+@media (min-width: 768px) {  .container{} }
+
+
+@media (min-width: 992px) {  .container{} }
+
+@media (min-width: 1200px) {  .container{}}
